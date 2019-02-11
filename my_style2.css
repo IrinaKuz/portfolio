@@ -1,0 +1,228 @@
+/* Removing browser default settings */
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Open Sans', Arial, sans-serif;
+	line-height: 150%;
+}
+/* Styling for mobile phones */
+#menu_content{
+	position: fixed;
+	top: -400px;
+	left: 0;
+	z-index: 5;
+	width: 100%;
+	background-color: #25107A;
+	color: white;
+	overflow: hidden;
+	transition: 1s;
+}
+
+#menu_content ul {
+    list-style-type: none;
+    width: 100%;
+    overflow: hidden;
+}
+#menu_content ul li{
+	display: block;
+	padding: 10px 0 15px 0;
+}
+#menu_content ul li a{
+	display: block;
+	padding: 8px;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+}
+#menu_content ul li a:hover{
+	color: #FF3EC9;
+}
+#menu_collapsible{
+	position: fixed;
+	top:0;
+	right:0;
+	z-index: 5;
+	width: 100%;
+	height: 50px;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: 0;
+	background-color: #25107A;
+	color: white;
+	border-bottom: 2px solid blue;
+	cursor: pointer;
+}
+#menu_collapsible ul{
+	list-style-type: none;
+	padding: 5px;
+	text-align: right;
+	font-weight: bold;
+}
+#menu_collapsible ul li{
+	line-height: 35%;
+}
+#intro{
+	background-image: linear-gradient(to bottom right, #25107A, blue);
+	color: white;
+	margin-top: 50px;
+	padding: 10px 0 30px 0;
+	text-align: center;
+	height: 500px;
+}
+#intro h1{
+	font-size: 2.5em;
+	margin-top: 80px;
+	padding: 30px 0;
+}
+#intro p{
+	font-size: 1.4em;
+	line-height: 150%;
+	margin: 20px 0;
+	padding: 0 10px;
+}
+span.name_accent{
+	color: #FF3EC9;
+}
+#projects, #skills, #resume, #contacts{
+	padding: 20px;
+}
+div.section_name{
+	text-align: center;
+}
+h2{
+	display: inline-block;
+	font-size: 1.6em;
+	text-align: center;
+	padding-top: 30px;
+	margin-bottom: 30px;
+}
+#projects_flex .project_item{
+	padding: 20px 30px;
+	margin: 10px;
+	box-shadow: 0px 0px 10px #696969;
+	position: relative;
+	padding-bottom: 44px;
+}
+#projects h3{
+	font-size: 1.2em;
+	padding-bottom: 10px;
+	text-align: center;
+}
+#projects .code_links{
+	position: absolute;
+	bottom: 20px;
+	left: 30px;
+}
+#projects .code_links a{
+	border: 1px solid blue;
+	border-radius: 5px;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	padding: 2px 5px;
+	margin: 5px 5px 5px 0;
+	color: white;
+	background-color: blue;
+	width: 50px;
+}
+#projects .wiki_link{
+	color:black;
+	background-color: white;
+	font-style: italic;
+	width: auto;
+	display: inline;
+}
+div.flex_container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.flex_item div{
+	text-align: center;
+	width: 150px;
+}
+#skills p{
+	text-align: center;
+	padding: 6px;
+	width: 150px;
+}
+.photoshop_logo_div{
+	width: 150px;
+	text-align: center;
+}
+img.photoshop_logo{
+	height: 3em;
+	display: inline-block;
+}
+#resume a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+#resume a:hover{
+	font-weight: bold;
+}
+#contacts p{
+	text-align: center;
+	padding: 3px;
+	width: 100%;
+}
+div.flex_container_contacts{
+	display: block;
+	width: 100%;
+}
+div.flex_container_contacts a{
+	display: block;
+	text-decoration: none;
+	background-color: #25107A;
+	color:white;
+	padding: 5px;
+	border-bottom: 1px solid #25107A;
+	border-radius: 5px;
+}
+@media only screen and (min-width: 768px) {
+	#menu_collapsible{
+		display: none;
+	}
+	#menu_content{
+		display: block;
+		background-color: #25107A;
+		position: fixed;
+		top:0;
+		left: 0;
+		transition: default;
+	}
+	#menu_content ul li{
+		float: left;
+		display: block;
+		width: 25%;
+	}
+	#menu_content ul li a{
+		display: block;
+		padding: 8px;
+		text-decoration: none;
+		text-align: center;
+		color: white;
+	}
+	#projects_flex{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	#projects_flex div{
+		width: 300px;
+	}
+	#contacts p{
+		width: 150px;
+		padding: 6px;
+		margin: 0 10px;
+	}
+	div.flex_container_contacts{
+		display: inline-flex;
+		justify-content: center;
+	}
+}
