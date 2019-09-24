@@ -40,6 +40,9 @@ body{
 #menu_content ul li a:hover{
 	color: #FF3EC9;
 }
+#menu_content .visible{
+	display: block;
+}
 #menu_collapsible{
 	position: fixed;
 	top:0;
