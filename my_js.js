@@ -1,6 +1,5 @@
 // menu opens if a user clicks on menu sign in top right corner
 document.getElementById('menu_collapsible').addEventListener('click', function() {
-<<<<<<< HEAD
 	document.getElementsByClassName('menu_content')[0].classList.toggle('visible');
 });
 // menu closes if a user clicks on any link
@@ -14,7 +13,6 @@ document.getElementById('forward').addEventListener('click', function() {
 	var introHeight = document.getElementById('intro').scrollHeight;
 	window.scrollBy(0, introHeight);
 });
-=======
     if(document.getElementById('menu_content').style.top === "50px") {
         document.getElementById('menu_content').style.top = "-400px"; 
     }
@@ -29,6 +27,5 @@ for(var i = 0; i < links.length; i++) {
         document.getElementById('menu_content').style.top = "-400px";
     })
 }
->>>>>>> c52234e3df3db58b699dfe74ce00ef103105ed07
 
 
